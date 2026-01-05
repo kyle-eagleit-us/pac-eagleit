@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
   host = host.toLowerCase();
 
   // Azure forward proxy reachable over WireGuard
-  var PROXY = "PROXY 10.100.0.1:3128";
+  var PROXY = "PROXY 10.254.0.1:3128";
   var DIRECT = "DIRECT";
 
   function hostMatches(domain) {
